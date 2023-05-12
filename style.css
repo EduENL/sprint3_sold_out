@@ -10,9 +10,45 @@
     font-family: 'Raleway', sans-serif;
 }
 
+main {
+    background-color: #ecebe9;
+}
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: #d9d9d9;
+    line-height: 40px;
     position: sticky;
+}
+
+header ul .clicks {
+    width: 40%;
+    list-style: none;
+    display: flex;
+    margin: 0 0 0 30px;
+}
+
+header ul .clicks li {
+    margin: 0 0 0 30px;
+}
+
+header ul .logo {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header ul .logo img {
+    padding-top: 10px;
+    height: 40px;
+}
+
+
+
+.carrinho img {
+    height: 30px;
+}
+
+
+.contato img {
+    height: 30px;
 }
