@@ -5,8 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
-    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -15,40 +13,67 @@ main {
 }
 header {
     background-color: #d9d9d9;
-    line-height: 40px;
     position: sticky;
+    top: 0;
+    box-shadow: 0px 3px 10px #464646;
 }
 
-header ul .clicks {
-    width: 40%;
-    list-style: none;
+.nav-bar {
     display: flex;
-    margin: 0 0 0 30px;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
 }
 
-header ul .clicks li {
-    margin: 0 0 0 30px;
+.nav-list {
+    display: flex;
+    align-items: center;
 }
 
-header ul .logo {
-    width: 100%;
-    list-style: none;
+.nav-list ul {
     display: flex;
     justify-content: center;
+    list-style: none;
+}
+.nav-item {
+    margin: 0 15px;
+
 }
 
-header ul .logo img {
-    padding-top: 10px;
+.nav-item a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav-item a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.nav-logo img {
     height: 40px;
 }
 
+.nav-carrinho {
+    display: flex;
+    align-items: center;
+}
 
+.nav-carrinho img {
+    height: 25px;
+}
 
-.carrinho img {
-    height: 30px;
+.nav-carrinho #nav-perfil {
+    margin: 0 30px;
 }
 
 
-.contato img {
-    height: 30px;
-}
+
