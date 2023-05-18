@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 body {
     /* height: 300vh; */
@@ -13,11 +18,14 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
-    background-color: #f2f2f2;
+    background-color: #d9d9d9;
     position: sticky;
     top: 0;
   }
   
+  .logo {
+    padding-right: 230px;
+  }
   .logo img {
     height: 40px;
   }
@@ -32,7 +40,7 @@ header {
   }
   
   .links a:hover {
-    color: #ff9900;
+    color: white;
   }
   
   .user-actions a {
@@ -43,13 +51,25 @@ header {
   }
   
   .user-actions a:hover {
-    color: #ff9900;
+    color: white;
     text-decoration: underline;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+    display: none;
+  }
+
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
   }
   /* _____________________________________________ */
   /* Main */
   main {
-    background-image: url('main.png');
+    background-image: url('Assets/main.png');
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -63,7 +83,7 @@ header {
   }
   
   h1 {
-    color: yellow;
+    color: #EFC328;
     margin-bottom: 30px;
   }
   
@@ -82,6 +102,7 @@ header {
     background-color: white;
     color: black;
   }
+
   /* ____________________ */
   .informações{
     margin: 50px 0;
@@ -139,6 +160,9 @@ header {
   .content {
     font-weight: bold;
   }
+  .content h1 {
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
 
   /* _______________________ */
   /* Footer */
@@ -170,6 +194,14 @@ header {
     align-items: center;
     padding-top: 0;
   }
+
+  .image-section a {
+    color: white;
+  }
+
+  .image-section a:hover {
+    color: #666;
+  }
   
   .image-section img {
     margin: 10px;
@@ -193,6 +225,7 @@ header {
   
     .logo {
       margin-bottom: 10px;
+      padding-right: 10px;
     }
 
     .links a {
