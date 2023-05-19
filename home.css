@@ -231,8 +231,6 @@ header {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
         font-weight: 600;
-
-        
       }
   
     .links {
@@ -255,9 +253,18 @@ header {
 
     .mobile-menu ul {
       display: flex;
-      flex-direction: column;
+      justify-content: space-around;
       text-align: center;
       padding-bottom: 1rem;
+      
+    }
+    .icon-mobile {
+      filter: invert(100%);
+      align-items: center;
+    }
+    .nav-item a {
+      text-decoration: none;
+      color: black;
     }
 
     .mobile-menu .nav-item {
@@ -270,8 +277,15 @@ header {
       padding: 1rem 2rem;
     }
     .open {
-      display: block;
-        
+      display: flex;
+      justify-content: space-around;
+      align-items: center ;
+      position: absolute;
+      top: 9vh;
+      background-color: #d9d9d9;
+      left: 0;
+      width: 100vw;
+      height: 10vw;
     }
   }
   @media screen and (max-width: 730px) {
