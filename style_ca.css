@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 body {
     /* height: 300vh; */
@@ -9,44 +14,53 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 50px;
-    background-color: #f2f2f2;
-    position: sticky;
-    top: 0;
-    margin-bottom: 50px;
-  }
-  
-  .logo img {
-    height: 40px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #d9d9d9;
+  position: sticky;
+  top: 0;
+}
 
-  .links a {
-    margin-right: 10px;
-    padding: 0 15px;
-    color: #333;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-  }
-  
-  .links a:hover {
-    color: #ff9900;
-  }
-  
-  .user-actions a {
-    margin-right: 10px;
-    padding: 0 3px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .user-actions a:hover {
-    color: #ff9900;
-    text-decoration: underline;
-  }
+.logo {
+  padding-right: 230px;
+}
+.logo img {
+  height: 40px;
+}
+
+.links a {
+  margin-right: 10px;
+  padding: 0 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.user-actions a {
+  margin-right: 10px;
+  padding: 0 3px;
+  color: #333;
+  text-decoration: none;
+}
+
+.user-actions a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none ;
+}
 
 /* __________________________________________________________ */
 /* Main */
@@ -131,7 +145,7 @@ main {
         color: #333;
         margin-left: 80px;
     
-        position: absolute;
+        position:absolute;
         /* top: 15%; */
         left: 53%;
         border-radius: 10px;
@@ -210,67 +224,163 @@ main {
     align-items: flex-end;
 }  
   
-  
-  
-  /* Responsividade */
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  
-    .logo {
-      margin-bottom: 10px;
-    }
 
-    .links a {
-        margin-right: 10px;
-        padding: 0 10px;
-        color: #333;
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: 600;
-      }
+    /* Responsividade */
+    @media screen and (max-width: 990px) {
+    
   
-    .links {
-      order: 2;
-      margin-bottom: 10px;
-    }
-  
-    .user-actions {
-      order: 3;
-    }
-    .division {
-        flex-basis: 100%;
-      }
-      .borda {
-        border-right: none;
-        border-left: none;
-        border-top:2px solid #666;
-        border-bottom:2px solid #666;
-      }
-      .division2 {
-        flex-basis: 100%;
-      }
-      .footer-section {
-        flex-basis: 100%;
+      .logo {
+        padding-right: 10px;
       }
     
-      .image-container {
-        flex-direction: column;
-        align-items: center;
+      .links {
+        display: none;
       }
-      .footer-section {
-        flex-basis: 100%;
+  
+      .mobile-menu-icon {
+        display: block;
+        color: black;
       }
-      .footer-section p {
-        text-align: center;
+  
+      .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 18px;
       }
-      .direita {
+  
+      .mobile-menu ul {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        text-align: center;
+        padding-bottom: 1rem;
+        
+      }
+      .icon-mobile {
+        color: black;
         align-items: center;
-    }  
-  }
+      }
+      .nav-item a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+      }
+  
+        .mobile-menu a:hover {
+          color: white;
+        }
+  
+      .nav-itemm2 {
+        padding-right: 50px;
+      }
+  
+      mobile menu #nav-link {
+        padding-left: 550px;
+      }
+      .mobile-menu .nav-item {
+        display: block;
+      }
+  
+      .mobile-menu .user-actions {
+        display: block;
+        padding: 1rem 2rem;
+      }
+      .open {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 9vh;
+        background-color: #cccbcb;
+        left: 0;
+        width: 100vw;
+        height: 10vw;
+        color: black;
+      }
+    }
+    @media screen and (max-width: 730px) {
+      
+    
+      .mobile-menu-icon {
+        display: block;
+        color: black;
+      }
+  
+      .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+  
+      .mobile-menu ul {
+        display: flex;
+        text-align: center;
+        padding-bottom: 1rem;
+        
+      }
+      .icon-mobile {
+        color: black;
+        align-items: center;
+      }
+      .nav-item a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+      }
+  
+      .mobile-menu a:hover {
+          color: white;
+      }
+  
+      .nav-itemm2 {
+        padding-right: 50px;
+      }
+  
+      mobile menu #nav-link {
+        padding-left: 550px;
+      }
+      .mobile-menu .nav-item {
+        display: block;
+      }
+  
+      .mobile-menu .user-actions {
+        display: block;
+        padding: 1rem 2rem;
+      }
+      .open {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 9vh;
+        background-color: #cccbcb;
+        left: 0;
+        width: 100vw;
+        height: 10vw;
+        color: black;
+      }
+     
+        .footer-section {
+          flex-basis: 100%;
+        }
+      
+        .image-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer-section {
+          flex-basis: 100%;
+        }
+        .footer-section p {
+          text-align: center;
+        }
+        .direita {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }  
+    }
   
