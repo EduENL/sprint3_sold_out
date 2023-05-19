@@ -66,7 +66,7 @@ header {
   /* _____________________________________________ */
   /* Main */
   main {
-    background-image: url('Assets/main.png');
+    background-image: url('Assets/My\ project-1.png');
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -80,7 +80,7 @@ header {
   }
   
   h1 {
-    color: #EFC328;
+    color: #cfc694;
     margin-bottom: 30px;
   }
   
@@ -149,9 +149,10 @@ header {
   }
   
   .produtos img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     margin-bottom: 10px;
+
   }
   
   .content {
