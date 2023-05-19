@@ -84,7 +84,7 @@ header {
     margin-bottom: 30px;
   }
   
-  button {
+  .main-button {
     background-color: transparent;
     color: white;
     padding: 10px 20px;
@@ -148,7 +148,7 @@ header {
     text-align: center;
   }
   
-  img {
+  .produtos img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
@@ -219,7 +219,6 @@ header {
     
   
     .logo {
-      margin-bottom: 10px;
       padding-right: 10px;
     }
 
@@ -234,21 +233,21 @@ header {
       }
   
     .links {
-      /* order: 2;
-      margin-bottom: 10px; */
-
       display: none;
     }
   
 
     .mobile-menu-icon {
       display: block;
+      color: black;
     }
 
     .mobile-menu-icon button {
       background-color: transparent;
       border: none;
       cursor: pointer;
+      padding: 10px 20px;
+      font-size: 18px;
     }
 
     .mobile-menu ul {
@@ -259,7 +258,7 @@ header {
       
     }
     .icon-mobile {
-      filter: invert(100%);
+      color: black;
       align-items: center;
     }
     .nav-item a {
@@ -269,7 +268,6 @@ header {
 
     .mobile-menu .nav-item {
       display: block;
-      padding-top: 1.2rem;
     }
 
     .mobile-menu .user-actions {
@@ -278,14 +276,15 @@ header {
     }
     .open {
       display: flex;
-      justify-content: space-around;
-      align-items: center ;
+      justify-content: space-between;
+      align-items: center;
       position: absolute;
       top: 9vh;
-      background-color: #d9d9d9;
+      background-color: #cccbcb;
       left: 0;
       width: 100vw;
       height: 10vw;
+      color: black;
     }
   }
   @media screen and (max-width: 730px) {
