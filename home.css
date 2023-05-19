@@ -35,7 +35,6 @@ header {
     padding: 0 15px;
     color: #333;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
   }
   
@@ -55,17 +54,15 @@ header {
     text-decoration: underline;
   }
 
-  .mobile-menu {
-    cursor: pointer;
+  .mobile-menu-icon {
     display: none;
   }
 
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: black;
-    margin: 8px;
+  .mobile-menu {
+    display: none ;
   }
+
+
   /* _____________________________________________ */
   /* Main */
   main {
@@ -218,10 +215,8 @@ header {
   
   
   /* Responsividade */
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
+  @media screen and (max-width: 990px) {
+    
   
     .logo {
       margin-bottom: 10px;
@@ -236,16 +231,86 @@ header {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
         font-weight: 600;
+
+        
       }
   
     .links {
-      order: 2;
-      margin-bottom: 10px;
+      /* order: 2;
+      margin-bottom: 10px; */
+
+      display: none;
     }
   
-    .user-actions {
-      order: 3;
+
+    .mobile-menu-icon {
+      display: block;
     }
+
+    .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+    }
+
+    .mobile-menu .user-actions {
+      display: block;
+      padding: 1rem 2rem;
+    }
+    .open {
+      display: block;
+        
+    }
+  }
+  @media screen and (max-width: 730px) {
+    
+    .links {
+      display: none;
+    }
+  
+
+    .mobile-menu-icon {
+      display: block;
+    }
+
+    .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+    }
+
+    .mobile-menu .user-actions {
+      display: block;
+      padding: 1rem 2rem;
+    }
+    .open {
+      display: block;
+    }
+    
     .division {
         flex-basis: 100%;
       }
